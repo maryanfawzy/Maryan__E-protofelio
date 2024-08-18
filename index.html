@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryan Fawzy</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a3ae5aba6e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script><script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script defer src="./index.js"></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "4nCE9DGyE5x8gH489",
+  });
+})();
+</script>
+
+
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackGround(event)">
+        <nav>
+            <figure>
+                <img id ="prsonal-logo" src="./assets/maryan personal logo.png">
+            <span></span></figure> 
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" onclick="toggleModal()" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#project" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projects</a>
+
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black 
+                    
+                    "><i class="fas  fa-adjust"></i></a>
+
+                </li>
+
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey
+
+                </h1>
+                <h1 class="title title--secondary">I am Maryan
+
+                </h1>
+                <p class="header__para">
+                    I am a 
+                    <b class="red">Frontend Software Engineer </b>
+                         
+                    with a strong passion for buliding web applicationx with great user experience.
+                    <br>
+                    Here`s a bit more <b class="red click" onclick="toggleModal()">about me.</b>
+                </p>
+                <div class="social__list">
+                    <a href="www.linkedin.com/in/maryan-nady-f-591a0990" target="_blank" class="social__link  click"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/maryanfawzy" target="_blank" class="social__link  click"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/maryanfawzy" target="_blank" class="social__link click"><i class="fas fa-file-pdf"></i></a>
+                </div>
+                
+            </div>
+
+        </header>
+        <button class="mail__btn click" onclick="toggleModal()">
+            <i class ="fas fa-envelope"></i>
+
+            </i>
+            </button>
+            <a href="#project" class="scroll">
+                <div class="scroll__icon click">
+
+                </div> 
+            </a>
+    </section>
+    <div class="model">
+        <div class="model__half model__about">
+            <h3 class="model__title">Here is a bit about me 
+            </h3>
+            <h4 class="model__sub-title model__sub-title--about">
+                Frontend Software Engineer
+
+            </h4>
+            <p class="model__para">I am a very good American <b class="red"> Frontend Software Engineer </b> and have a great passion for bulliding responsive web applictions for a great user experience .<br>
+            I curntely work on extremly difficult problems,  </p>
+            <div class="model__langues">
+                <figure class="model__languse">
+                    <img class="model__langues--img"   src="	https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+               <span class="languse__name" >HTML</span></figure>
+                <figure class = "model__languse">
+                    <img class="model__langues--img"  src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+               <span class="languse__name">CSS</span></figure>
+
+                <figure class = "model__languse">
+                    <img class="model__langues--img"  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+               <span class="languse__name">JavaScript</span></figure>
+             
+                    <figure class = "model__languse">
+                    <img class="model__langues--img"  src="	https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+               <span class="languse__name">Typescript</span></figure>
+                <figure class = "model__languse">
+                    <img class="model__langues--img"  src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png	"
+     alt="">
+                <span class="languse__name">Nuxt-dot</span> </figure>
+                <figure class = "model__languse">
+                    <img class="model__langues--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png
+                    " alt="">
+           <span class="languse__name"> React</span>    </figure>
+                <figure class = "model__languse">
+                    <img class="model__langues--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
+               <span class="languse__name">Vue</span></figure>
+                <figure class = "model__languse">
+                    <img class="model__langues--img" src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
+               <span class="languse__name">Next-dot</span></figure>
+
+            </div>
+        </div>
+            <div class="model__half model__contact">
+                <i class="fas fa-times model__exit click" onclick="toggleModal()"></i>
+                <h3 class="model__title model__title--contact">Let`s have a chat!
+                </h3>
+                <h4 class="model__sub-title model__sub-title--contact">
+                    I am curntely open for new opportunities.
+                    <br>I would love to hear from you
+                </h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--lable"  for="name">Name</label>
+                        <input class="input" name="user_name"   type="text" required></input>
+
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--lable"  for="email">Email</label>
+                        <input class="input" name="user_email"   type="email" required> </input>
+
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--lable"  for="message">Message</label>
+                        <textarea class="input" name="message"   type="text" required></textarea>
+
+                    </div>
+                    <button id="contact__submit" class="form__submit"> Send it my way </button>
+                </form>
+                <div class="model__overlay model__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+
+                </div>
+                <div class="model__overlay
+                 model__overlay--sucsess">
+                    Thanks for the message! Looking forward to speking to you soon.
+
+                </div>
+                
+
+            </div>
+           
+    </div>
+    <!-- <img class="shape1 shape" src="./assets/Screenshot 2024-08-17 175934.png" alt="">
+    <img class="shap2 shape" src="./assets/Screenshot 2024-08-17 175934.png" alt="">
+    <img class="shape shape" src="./assets/Screenshot 2024-08-17 175934.png" alt="">
+    <img class="shape4 shape" src="./assets/Screenshot 2024-08-17 175934.png" alt="">
+   
+    <img class="shape5 shape" src="./assets/Screenshot 2024-08-17 180654.png" alt=""> 
+    <img class="shape6 shape" src="./assets/Screenshot 2024-08-17 180654.png" alt="">
+     <img class="shape7 shape" src="./assets/Screenshot 2024-08-17 180654.png" alt=""> 
+     <img class="shape8 shape" src="./assets/Screenshot 2024-08-17 180654.png" alt="">
+     <img class="shape9 shape" src="./assets/Screenshot 2024-08-17 180654.png" alt=""> -->
+    
+   
+     <section id="project">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="red">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img  class="project__img" src="http://127.0.0.1:5501/Tutorial%20Exclusive%20Eportfolio/assets/google%20mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__desreption">
+                                    <h1 class="project__desreption--title">Car sales</h1>
+                                    <h4 class="project__descreption--sub-title">
+                                        Html, Css,JavaScript, vue, Vux 
+                                    </h4>
+                                    <p class="project__decreption--para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit iste in esse corrupti! Quo, quasi optio? Provident dignissimos consequatur eius!
+
+                                    </p>
+                                    <div class="project__descreption--links">
+                                        <a href="#" class="project__descreption--link"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project__descreption--link"><i class="fas fa-link"></i></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        
+
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img  class="project__img" src="http://127.0.0.1:5501/Tutorial%20Exclusive%20Eportfolio/assets/google%20mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__desreption">
+                                    <h1 class="project__desreption--title">Car sales</h1>
+                                    <h4 class="project__descreption--sub-title">
+                                        Html, Css,JavaScript, vue, Vux 
+                                    </h4>
+                                    <p class="project__decreption--para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit iste in esse corrupti! Quo, quasi optio? Provident dignissimos consequatur eius!
+
+                                    </p>
+                                    <div class="project__descreption--links">
+                                        <a href="#" class="project__descreption--link"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project__descreption--link"><i class="fas fa-link"></i></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img  class="project__img" src="http://127.0.0.1:5501/Tutorial%20Exclusive%20Eportfolio/assets/google%20mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__desreption">
+                                    <h1 class="project__desreption--title">Car sales</h1>
+                                    <h4 class="project__descreption--sub-title">
+                                        Html, Css,JavaScript, vue, Vux 
+                                    </h4>
+                                    <p class="project__decreption--para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit iste in esse corrupti! Quo, quasi optio? Provident dignissimos consequatur eius!
+
+                                    </p>
+                                    <div class="project__descreption--links">
+                                        <a href="#" class="project__descreption--link"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project__descreption--link"><i class="fas fa-link"></i></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                       
+                    
+                                    </ul>
+                                </div>
+                            </div>
+    
+                 
+
+     </section>
+     <footer>
+        <div class="container footer__container">
+            <div class="footer__row">
+            <figure>
+            <img  class="footer__logo--img"  src="./assets/maryan personal logo.png"   alt="">
+        <span></span>    </figure> 
+            <div class="footer__social--links">
+                <a href="https://github.com/maryanfawzy" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+            Github</a>
+            <a href="#" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white">
+        LinkedIn</a>
+        <a href="#" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white" onclick="toggleModal()">
+        Contact
+    </a>
+    <a href="#" class="
+    footer__social--link
+    link__hover-effect
+    link__hover-effect--white">
+Resume</a>
+
+            </div> 
+            <div class="footer__copyright">Copyright <span class="red m__copyright">M</span>  2024 Maryan Fawzy
+
+
+            </div>      
+        </div>
+        </div>
+     </footer>
+    
+</body>
+</html>
