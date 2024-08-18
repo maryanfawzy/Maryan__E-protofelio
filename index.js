@@ -13,7 +13,7 @@ function moveBackGround(event){
 function toggleContrast(){
    contrastToggel=!contrastToggel;
    if(contrastToggel){
-      document.body.classList+="dark-theme"}
+      document.body.classList+= "dark-theme"}
    else{
       document.body.classList.remove("dark-theme")
    }
@@ -24,7 +24,7 @@ function toggleContrast(){
    event.preventDefault();
    const loading= document.querySelector(".model__overlay--loading")
 const sucsess = document.querySelector(".model__overlay--sucsess")
-loading.classList+= " model__overlay--visable"
+loading.classList += " model__overlay--visable"
  
     emailjs
    .sendForm(
