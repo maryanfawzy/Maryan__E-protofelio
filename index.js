@@ -18,30 +18,33 @@ function toggleContrast(){
       document.body.classList.remove("dark-theme")
    }
 
+
 }
-
-  function contact(event){
+function contact(event) {
    event.preventDefault();
-   const loading= document.querySelector(".model__overlay--loading")
-const sucsess = document.querySelector(".model__overlay--sucsess")
-loading.classList += " model__overlay--visable"
- 
-    emailjs
-   .sendForm(
-      "service_q19ok5f",
-      "template_kqbkzal",
-      event.target,
-      "4nCE9DGyE5x8gH489"
+   const loading = document.querySelector(".model__overlay--loading");
+   const success = document.querySelector(".model__overlay--sucsess");
+   loading.classList += " model__overlay--visable";
+   emailjs
+     .sendForm(
+       "service_q19ok5f",
+       "template_kqbkzal",
+       event.target,
+      
+     )
+     .then(() => {
+       loading.classList.remove("model__overlay--visable");
+       success.classList += " model__overlay--visable";
+     })
+     .catch(() => {
+       loading.classList.remove("model__overlay--visable");
+       alert(
+         "The email service is temporarily unavailable. Please contact me directly on maryanfawzy7@gmail.com"
+       );
+     });
+ }
 
-   ).then(()=>{
-      loading.classList.remove("model__overlay--visable")
-      sucsess.classList += "model__overlay--visable";
-   }).catch(()=> loading.classList.remove("model__overlay--visable"));
-   alert(
-      "The email servises is temporarily unavalibale. Please email me directlly on maryanfawzy7@gmail.com"
-   );
-     
-  }
+
   let isModelOpen = false
   function toggleModal (){
   
