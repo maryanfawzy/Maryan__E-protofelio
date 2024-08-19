@@ -13,7 +13,7 @@ function moveBackGround(event){
 function toggleContrast(){
    contrastToggel=!contrastToggel;
    if(contrastToggel){
-      document.body.classList+= "dark-theme"}
+      document.body.classList += "dark-theme"}
    else{
       document.body.classList.remove("dark-theme")
    }
@@ -35,7 +35,7 @@ loading.classList += " model__overlay--visable"
 
    ).then(()=>{
       loading.classList.remove("model__overlay--visable")
-      sucsess.classList+="model__overlay--visable";
+      sucsess.classList += "model__overlay--visable";
    }).catch(()=> loading.classList.remove("model__overlay--visable"));
    alert(
       "The email servises is temporarily unavalibale. Please email me directlly on maryanfawzy7@gmail.com"
