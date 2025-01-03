@@ -167,9 +167,13 @@ width: 100%;
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute  ;
+    position: fixed  ;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
+    
+    
 
 }
 .scroll{
@@ -513,14 +517,16 @@ background-color: white;
 
 }
 .project{
-    max-width: 1200px;
+    max-width: 900px;
     padding-bottom: 100px;
+    
     
 }
 
 .project__img{
     width: 100%;
     transition: all 800ms ease;
+    transform: scale(1.02);
 
 }
 .project:hover .project__img{
@@ -556,6 +562,13 @@ background-color: white;
     transition: all 450ms ease-in-out;
     visibility: hidden;
 
+}
+
+.project__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 .project__desreption--title{
     font-size: 40px;
